@@ -9,6 +9,7 @@ import static org.junit.Assert.assertEquals;
 
 public class FelineTest {
     Feline feline;
+
     @Before
     public void init() {
         feline = new Feline();
@@ -33,7 +34,7 @@ public class FelineTest {
     @Test //тест метода eatMeat(), что он выводит нужный список еды для Feline
     public void eatMeatIsMeat() throws Exception {
         List<String> foodFofFeline = List.of("Животные", "Птицы", "Рыба");
-        assertEquals(foodFofFeline,feline.eatMeat());
+        assertEquals(foodFofFeline, feline.eatMeat());
     }
 
 

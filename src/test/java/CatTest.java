@@ -1,13 +1,10 @@
 import com.example.Cat;
-
 import com.example.Feline;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
-
 import org.mockito.junit.MockitoJUnitRunner;
-
 
 import java.util.List;
 
@@ -15,11 +12,11 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
 public class CatTest {
-   @Mock
+    @Mock
     Feline feline; //создал мок класса Feline
 
     @Test //проверяю, что метод getSound() класса Cat возвращает "Мяу"
-    public void testGetSoundCat(){
+    public void testGetSoundCat() {
         Cat cat = new Cat(feline);
         assertEquals("Мяу", cat.getSound());
     }
@@ -29,7 +26,7 @@ public class CatTest {
         Cat cat = new Cat(feline);
         cat.getFood();
         cat.getFood();
-        Mockito.verify(feline,Mockito.times(2)).eatMeat();
+        Mockito.verify(feline, Mockito.times(2)).eatMeat();
     }
 
     @Test //Проверяю, что метод getFood возвращает список пищи кошки

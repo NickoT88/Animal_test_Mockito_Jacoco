@@ -45,7 +45,7 @@ public class AlexLionTest {
 
     @Test //проверка, что метод getFriends() вызывает нужный список
     public void getFriendsListCheck() {
-        assertEquals( List.of("зебра Марти", "бегемотиха Глория", "жираф Мелман"), alexLionTest.getFriends());
+        assertEquals(List.of("зебра Марти", "бегемотиха Глория", "жираф Мелман"), alexLionTest.getFriends());
     }
 
     @Test //проверка, что метод getPlaceOfLiving() вызывает нужный String
