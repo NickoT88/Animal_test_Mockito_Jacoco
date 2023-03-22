@@ -19,7 +19,7 @@ public class LionParamTest {
 
     @Parameterized.Parameters
     public static Object[] getTestData() {
-        return new Object[][] {
+        return new Object[][]{
                 {"Самец", true},
                 {"Самка", false},
         };
@@ -29,7 +29,7 @@ public class LionParamTest {
     public void doesHaveManeTest() throws Exception {
         Feline feline = new Feline();
         Lion lion = new Lion(sex, feline);
-        assertEquals(hasMane,lion.doesHaveMane());
+        assertEquals(hasMane, lion.doesHaveMane());
     }
 
 }
